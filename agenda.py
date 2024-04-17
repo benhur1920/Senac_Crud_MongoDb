@@ -67,10 +67,8 @@ def atualizar_telefone():
         if nome == agenda['nome'] and telefone == agenda['numero']:
             nome_alterar = input(f'Altere o nome de {nome}: ')
             numero_alterar = input(f'Altere o telefone de {nome}: ')
-            sobrenome = input(f'Informe o sobrenome de {
-                              nome} que você deseja atualizar: ')
-            email = input(f'Informe o email de {
-                          nome} que você deseja atualizar: ')
+            sobrenome = input(f'Informe o sobrenome de {nome} que você deseja atualizar: ')
+            email = input(f'Informe o email de {nome} que você deseja atualizar: ')
 
             agenda['nome'] = nome_alterar
             agenda['numero'] = numero_alterar
@@ -78,8 +76,7 @@ def atualizar_telefone():
             agenda['email'] = email
 
             telefone_encontrado = True
-            limpar_a_tela(f'O telefone de {
-                          nome} foi atualizado com sucesso !!!')
+            limpar_a_tela(f'O telefone de {nome} foi atualizado com sucesso !!!')
             break
     if not telefone_encontrado:
         limpar_a_tela(f'O Telefone não foi encontrado!')
